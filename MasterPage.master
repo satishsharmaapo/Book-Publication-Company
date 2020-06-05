@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 32px;
+        }
+        .style2
+        {
+            width: 11px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 100%; height: 319px; margin-bottom: 0px;">
+            <tr>
+                <td class="style2" rowspan="2">
+                    <img alt="" src="" style="width: 207px; height: 162px; margin-right: 0px" /></td>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Calibri" 
+                        Font-Underline="True" ForeColor="Blue" Text="ONLINE BOOK PUBLISHING"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                </td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
